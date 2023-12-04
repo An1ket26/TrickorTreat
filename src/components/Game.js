@@ -8,6 +8,7 @@ const Game=(props)=>{
     const [moves,setMoves]=useState(0);
     const [chocoPos,setChocoPos]=useState([]);
     const [totalChoco,setTotalChoco]=useState(0);
+    
     const updateChoco=(x,y)=>{
         var filtered= chocoPos.filter(choco=>choco.x===x-1 &&choco.y===y-1 && choco.status==='n');
         if(filtered.length>0)
