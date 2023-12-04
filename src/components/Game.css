@@ -1,0 +1,38 @@
+body{
+    background-color: black;
+    color: white;
+}
+table{
+    width:500px;
+    height:500px;
+    margin-top: 5%;
+    margin-left:30%;
+    border: 1px solid black;
+    border-collapse: collapse;
+    background-image: url(../../public/background.jpeg);
+    background-blend-mode: overlay;
+    background-size: cover;
+    background-position: center;
+}
+td{
+    width: 50px;
+    height:50px;
+    border: 1px solid black;
+}
+.user{
+    background-image: url('../../public/user.png');
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: overlay;
+}
+.choco{
+    background-image: url('../../public/sweet-1.png');
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: overlay;
+}
+
+.result{
+    margin-left:30%;
+    margin-top:10%;
+}

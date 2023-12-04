@@ -1,23 +1,16 @@
-import logo from './logo.svg';
 import './App.css';
+import {useState } from "react";
+import Rules from "./components/Rules.js"
+import Game from "./components/Game.js"
+
 
 function App() {
+  const [GameMode,setGameMode]=useState("Default");
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      
+     {GameMode==="Default" && <Rules setGameMode={setGameMode}/>}
+     {GameMode==="start" && <Game setGameMode={setGameMode} size={10} />}
     </div>
   );
 }
